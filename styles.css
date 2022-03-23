@@ -11,15 +11,6 @@
   letter-spacing: 3px;
 }
 
-#yellow-block {
-  position: absolute;
-  margin-top: 10px;
-  width: 5px;
-  height: 15px;
-  left: 90px;
-  background-color: yellow;
-}
-
 .keyboard-container {
   margin-top: 135px;
 }
