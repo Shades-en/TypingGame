@@ -4,6 +4,18 @@ for(i=0;i<sentences.length;i++){
     totalWords+=sentences[i].split(" ").length
 }
 
+
+function responsive(maxWidth) {
+    if (maxWidth.matches) { 
+        $("div#keyboard-lower-container").hide();
+        $("div#keyboard-upper-container").hide()
+      
+    }
+}
+var maxWidth = window.matchMedia("(max-width: 576px)");
+responsive(maxWidth);
+maxWidth.addListener(responsive);
+
 $("div#keyboard-upper-container").hide();
 
 $(document).keydown(function(e){
@@ -31,6 +43,7 @@ $(document).keypress(function(e){
         }
     }
 });
+
 
 var x=0;
 var y=0;
