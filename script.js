@@ -57,7 +57,7 @@ function game(){
     x=0;
     y=0;
     $("div#target-letter").append(sentences[x][y]);
-    $("#prompt-container").append("<input type=text>")
+    $("#prompt-container").append("<input type='text'  pattern='\d*' />")
 }
 
 
