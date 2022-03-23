@@ -8,136 +8,189 @@
 	<title>Just My Type</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
 	 crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/stylesheet.css">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles2.css">
 </head>
-
 <body>
-	<div class="container" id="target">
-		<div class="row col-md-12" id="prompt-container">
-			<div class="row col-lg-12 text-center" id="sentence"></div>
-			<div class="row col-lg-12 text-center" id="feedback"></div>
-			<div class="row col-lg-12 text-center" id="target-letter"></div>
-		</div>
-		<div id="keys">
-			<div class="text-center keyboard-container" id="keyboard-upper-container">
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="126">~</span>
-					<span class="well well-lg key" id="33">!</span>
-					<span class="well well-lg key" id="64">@</span>
-					<span class="well well-lg key" id="35">#</span>
-					<span class="well well-lg key" id="36">$</span>
-					<span class="well well-lg key" id="37">%</span>
-					<span class="well well-lg key" id="94">^</span>
-					<span class="well well-lg key" id="38">&</span>
-					<span class="well well-lg key" id="42">*</span>
-					<span class="well well-lg key" id="40">(</span>
-					<span class="well well-lg key" id="41">)</span>
-					<span class="well well-lg key" id="95">_</span>
-					<span class="well well-lg key" id="43">+</span>
-				</div>
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="81">Q</span>
-					<span class="well well-lg key" id="87">W</span>
-					<span class="well well-lg key" id="69">E</span>
-					<span class="well well-lg key" id="82">R</span>
-					<span class="well well-lg key" id="84">T</span>
-					<span class="well well-lg key" id="89">Y</span>
-					<span class="well well-lg key" id="85">U</span>
-					<span class="well well-lg key" id="73">I</span>
-					<span class="well well-lg key" id="79">O</span>
-					<span class="well well-lg key" id="80">P</span>
-					<span class="well well-lg key" id="123">{</span>
-					<span class="well well-lg key" id="125">}</span>
-					<span class="well well-lg key" id="124">|</span>
-				</div>
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="65">A</span>
-					<span class="well well-lg key" id="83">S</span>
-					<span class="well well-lg key" id="68">D</span>
-					<span class="well well-lg key" id="70">F</span>
-					<span class="well well-lg key" id="71">G</span>
-					<span class="well well-lg key" id="72">H</span>
-					<span class="well well-lg key" id="74">J</span>
-					<span class="well well-lg key" id="75">K</span>
-					<span class="well well-lg key" id="76">L</span>
-					<span class="well well-lg key" id="58">:</span>
-					<span class="well well-lg key" id="34">"</span>
-				</div>
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="90">Z</span>
-					<span class="well well-lg key" id="88">X</span>
-					<span class="well well-lg key" id="67">C</span>
-					<span class="well well-lg key" id="86">V</span>
-					<span class="well well-lg key" id="66">B</span>
-					<span class="well well-lg key" id="78">N</span>
-					<span class="well well-lg key" id="77">M</span>
-					<span class="well well-lg key" id="60">&#60</span>
-					<span class="well well-lg key" id="62">&#62</span>
-					<span class="well well-lg key" id="63">?</span>
-				</div>
-			</div>
-			<div class="text-center keyboard-container" id="keyboard-lower-container">
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="96">`</span>
-					<span class="well well-lg key" id="49">1</span>
-					<span class="well well-lg key" id="50">2</span>
-					<span class="well well-lg key" id="51">3</span>
-					<span class="well well-lg key" id="52">4</span>
-					<span class="well well-lg key" id="53">5</span>
-					<span class="well well-lg key" id="54">6</span>
-					<span class="well well-lg key" id="55">7</span>
-					<span class="well well-lg key" id="56">8</span>
-					<span class="well well-lg key" id="57">9</span>
-					<span class="well well-lg key" id="48">0</span>
-					<span class="well well-lg key" id="45">-</span>
-					<span class="well well-lg key" id="61">=</span>
-				</div>
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="113">q</span>
-					<span class="well well-lg key" id="119">w</span>
-					<span class="well well-lg key" id="101">e</span>
-					<span class="well well-lg key" id="114">r</span>
-					<span class="well well-lg key" id="116">t</span>
-					<span class="well well-lg key" id="121">y</span>
-					<span class="well well-lg key" id="117">u</span>
-					<span class="well well-lg key" id="105">i</span>
-					<span class="well well-lg key" id="111">o</span>
-					<span class="well well-lg key" id="112">p</span>
-					<span class="well well-lg key" id="91">[</span>
-					<span class="well well-lg key" id="93">]</span>
-					<span class="well well-lg key" id="92">\</span>
-				</div>
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="97">a</span>
-					<span class="well well-lg key" id="115">s</span>
-					<span class="well well-lg key" id="100">d</span>
-					<span class="well well-lg key" id="102">f</span>
-					<span class="well well-lg key" id="103">g</span>
-					<span class="well well-lg key" id="104">h</span>
-					<span class="well well-lg key" id="106">j</span>
-					<span class="well well-lg key" id="107">k</span>
-					<span class="well well-lg key" id="108">l</span>
-					<span class="well well-lg key" id="59">;</span>
-					<span class="well well-lg key" id="39">'</span>
-				</div>
-				<div class="row col-lg-12 keys-row">
-					<span class="well well-lg key" id="122">z</span>
-					<span class="well well-lg key" id="120">x</span>
-					<span class="well well-lg key" id="99">c</span>
-					<span class="well well-lg key" id="118">v</span>
-					<span class="well well-lg key" id="98">b</span>
-					<span class="well well-lg key" id="110">n</span>
-					<span class="well well-lg key" id="109">m</span>
-					<span class="well well-lg key" id="44">,</span>
-					<span class="well well-lg key" id="46">.</span>
-					<span class="well well-lg key" id="47">/</span>
-				</div>
-			</div>
-			<div class="row col-sm-6 text-center keys-row" id="space">
-				<div class="well well-lg key" id="32">Space</div>
-			</div>
-		</div>
+	<div class="main">
+		<div id="circle1"></div>
+		<div id="circle2"></div>
+		<div id="circle3"></div>
 	</div>
+	<div class="container white" id="inner">
+		<nav>
+			<div class="logo">
+				<img src="/assets/images/keyboard-removebg-preview.png" alt="keyboard icon" id="logo">
+				MyType
+			</div>
+			<div class="ends">
+				<a id="guide" href="#steps">Guide</a>
+				<a id="array" href="#words">Add Your Own Test Words!</a>
+			</div>
+		</nav>
+		<div class="container content">
+			<div class="description">
+				<p>Test your typing skills and find out your speed!<p>
+				<p>Add your own set of words and compare the results with your friends'.</p>
+				<br>
+				<p>Test now!</p>
+			</div>
+			<div class="plays container">
+				<img src="/assets/images/test-removebg-preview.png" alt="plays" id="content-image">
+				<button type="button" onclick="blur();" class="start">Play</button>
+			</div>
+		</div>
+
+		<div class="container" id="target">
+			<div class="row col-md-12" id="prompt-container">
+				<div class="row col-lg-12 text-center" id="sentence"></div>
+				<div class="row col-lg-12 text-center" id="feedback"></div>
+				<div class="row col-lg-12 text-center" id="target-letter"></div>
+			</div>
+			<div id="keys">
+				<div class="text-center keyboard-container" id="keyboard-upper-container">
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="126">~</span>
+						<span class="well well-lg key" id="33">!</span>
+						<span class="welll well-lg key" id="64">@</span>
+						<span class="well well-lg key" id="35">#</span>
+						<span class="well well-lg key" id="36">$</span>
+						<span class="well well-lg key" id="37">%</span>
+						<span class="well well-lg key" id="94">^</span>
+						<span class="well well-lg key" id="38">&</span>
+						<span class="well well-lg key" id="42">*</span>
+						<span class="well well-lg key" id="40">(</span>
+						<span class="well well-lg key" id="41">)</span>
+						<span class="well well-lg key" id="95">_</span>
+						<span class="well well-lg key" id="43">+</span>
+					</div>
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="81">Q</span>
+						<span class="well well-lg key" id="87">W</span>
+						<span class="well well-lg key" id="69">E</span>
+						<span class="well well-lg key" id="82">R</span>
+						<span class="well well-lg key" id="84">T</span>
+						<span class="well well-lg key" id="89">Y</span>
+						<span class="well well-lg key" id="85">U</span>
+						<span class="well well-lg key" id="73">I</span>
+						<span class="well well-lg key" id="79">O</span>
+						<span class="well well-lg key" id="80">P</span>
+						<span class="well well-lg key" id="123">{</span>
+						<span class="well well-lg key" id="125">}</span>
+						<span class="well well-lg key" id="124">|</span>
+					</div>
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="65">A</span>
+						<span class="well well-lg key" id="83">S</span>
+						<span class="well well-lg key" id="68">D</span>
+						<span class="well well-lg key" id="70">F</span>
+						<span class="well well-lg key" id="71">G</span>
+						<span class="well well-lg key" id="72">H</span>
+						<span class="well well-lg key" id="74">J</span>
+						<span class="well well-lg key" id="75">K</span>
+						<span class="well well-lg key" id="76">L</span>
+						<span class="well well-lg key" id="58">:</span>
+						<span class="well well-lg key" id="34">"</span>
+					</div>
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="90">Z</span>
+						<span class="well well-lg key" id="88">X</span>
+						<span class="well well-lg key" id="67">C</span>
+						<span class="well well-lg key" id="86">V</span>
+						<span class="well well-lg key" id="66">B</span>
+						<span class="well well-lg key" id="78">N</span>
+						<span class="well well-lg key" id="77">M</span>
+						<span class="well well-lg key" id="60">&#60</span>
+						<span class="well well-lg key" id="62">&#62</span>
+						<span class="well well-lg key" id="63">?</span>
+					</div>
+				</div>
+				<div class="text-center keyboard-container" id="keyboard-lower-container">
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="96">`</span>
+						<span class="well well-lg key" id="49">1</span>
+						<span class="well well-lg key" id="50">2</span>
+						<span class="well well-lg key" id="51">3</span>
+						<span class="well well-lg key" id="52">4</span>
+						<span class="well well-lg key" id="53">5</span>
+						<span class="well well-lg key" id="54">6</span>
+						<span class="well well-lg key" id="55">7</span>
+						<span class="well well-lg key" id="56">8</span>
+						<span class="well well-lg key" id="57">9</span>
+						<span class="well well-lg key" id="48">0</span>
+						<span class="well well-lg key" id="45">-</span>
+						<span class="well well-lg key" id="61">=</span>
+					</div>
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="113">q</span>
+						<span class="well well-lg key" id="119">w</span>
+						<span class="well well-lg key" id="101">e</span>
+						<span class="well well-lg key" id="114">r</span>
+						<span class="well well-lg key" id="116">t</span>
+						<span class="well well-lg key" id="121">y</span>
+						<span class="well well-lg key" id="117">u</span>
+						<span class="well well-lg key" id="105">i</span>
+						<span class="well well-lg key" id="111">o</span>
+						<span class="well well-lg key" id="112">p</span>
+						<span class="well well-lg key" id="91">[</span>
+						<span class="well well-lg key" id="93">]</span>
+						<span class="well well-lg key" id="92">\</span>
+					</div>
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="97">a</span>
+						<span class="well well-lg key" id="115">s</span>
+						<span class="well well-lg key" id="100">d</span>
+						<span class="well well-lg key" id="102">f</span>
+						<span class="well well-lg key" id="103">g</span>
+						<span class="well well-lg key" id="104">h</span>
+						<span class="well well-lg key" id="106">j</span>
+						<span class="well well-lg key" id="107">k</span>
+						<span class="well well-lg key" id="108">l</span>
+						<span class="well well-lg key" id="59">;</span>
+						<span class="well well-lg key" id="39">'</span>
+					</div>
+					<div class="row col-lg-12 keys-row">
+						<span class="well well-lg key" id="122">z</span>
+						<span class="well well-lg key" id="120">x</span>
+						<span class="well well-lg key" id="99">c</span>
+						<span class="well well-lg key" id="118">v</span>
+						<span class="well well-lg key" id="98">b</span>
+						<span class="well well-lg key" id="110">n</span>
+						<span class="well well-lg key" id="109">m</span>
+						<span class="well well-lg key" id="44">,</span>
+						<span class="well well-lg key" id="46">.</span>
+						<span class="well well-lg key" id="47">/</span>
+					</div>
+				</div>
+				<div class="row col-sm-6 text-center keys-row" id="space">
+					<div class="well well-lg key" id="32">Space</div>
+				</div>
+			</div>
+		</div>
+		<div class="guide" id="steps">
+			<h2>GUIDE</h2>
+			<br>
+			<ol>
+				<li>You would be given a set of words by Default.</li>
+				<li>Once started, you can begin your test!</li>
+				<li>Type each of them letters, the panel will guide you through.</li>
+				<li>At the end, the results will be displayed</li>
+				<li>You can also customise the words set</li>
+				<li>Start Typing now!</li>
+			</ol>
+		</div>
+		<div id="words">
+			<h2>MODIFY WORDS</h2>
+			<textarea placeholder="Enter your sentences here seperated by comma followed by space."></textarea>
+			<div>
+				<button type="button" id="confirm">Confirm Text</button>
+				<button type="button" id="current">Get Current Words</button>
+			</div>
+		</div>
+
+	</div>
+	
 	<script
 	src="https://code.jquery.com/jquery-3.6.0.js"
 	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

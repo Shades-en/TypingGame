@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap');
+
+.main{
+    position: fixed;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom,#91EAE4, #2980B9,#2980B9);
+    z-index: -1;
+    top:0;
+    overflow-x: hidden;
+}
+
+#circle1{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-image: linear-gradient(#e93488,#F9C449);
+    filter: blur(80px);
+    bottom: -500px;
+    left: -200px;
+    
+}
+
+#circle2{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-image: linear-gradient(#e93488,#F9C449);
+    filter: blur(80px);
+    bottom: -550px;
+    right: -300px;
+}
+
+#circle3{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: linear-gradient(#e93488,#F9C449);;
+    filter: blur(80px);
+    top: -50px;
+    left:600px
+}
+
+#inner{
+    margin: 50px auto;
+    padding: 30px 70px;
+    background-color: azure;
+    border-radius: 10px;
+    opacity: 0.75;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.logo{
+    cursor: pointer;
+}
+
+img#logo{
+    width: 100px;
+    border-right: 1px solid gray;
+    margin-right: 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-weight:400;
+    font-size: 115%;
+}
+
+.ends a{
+    margin:15px ;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ends a:hover{
+    color: #e93488;
+}
+
+.content{
+    padding: 40px;
+    display: flex;
+    border-bottom: 1px solid black;
+    width: auto;
+}
+
+.description{
+    font-family: 'Archivo', sans-serif;
+    font-size: x-large;
+    color: black;
+    align-self: center;
+    text-align: justify;
+}
+
+img#content-image{
+    margin: auto;
+    width: 450px;
+    padding: 60px 40px 50px 60px;
+}
+
+.plays{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.plays button.start {
+    font-family: 'archivoregular', sans-serif;
+    font-size: large;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    margin: auto;
+    background-color: #f5b5d3f5;
+    border-radius: 10px;
+}
+
+button.start:hover{
+    color: purple;
+}
+
+.guide{
+    padding: 20px;
+    font-family: 'Archivo', sans-serif;
+    margin:auto 30px;
+    
+}
+
+ol>li{
+    font-size: 120%;
+    padding: 10px;
+}
+
+#words{
+    border-top: 1px solid black;
+    padding: 20px;
+    font-family: 'Archivo', sans-serif;
+    margin:auto 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    padding: 20px;
+    border-radius: 10px;
+    border-color: gray;
+    margin: 20px;
+    display: block;
+    letter-spacing: 2px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+#words div{
+    display: flex;
+    justify-content: center;
+}
+
+#words button{
+    width: auto;
+    font-family: 'archivoregular', sans-serif;
+    font-size: large;
+    background-color: #f5b5d3f5;
+    border: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px ;
+}
