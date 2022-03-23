@@ -57,3 +57,18 @@
   padding: 10px 0;
 }
 
+#space{
+  margin:20px 23%;
+}
+
+@media (max-width: 576px) {
+  #keyboard-upper-container+#keyboard-lower-container
+  {
+    display: none;
+  }
+
+  #space
+  {
+    display: none;
+  }
+}

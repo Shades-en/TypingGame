@@ -57,6 +57,7 @@ function game(){
     x=0;
     y=0;
     $("div#target-letter").append(sentences[x][y]);
+    $("#prompt-container").append("<input type=text>")
 }
 
 
@@ -121,7 +122,6 @@ $(document).keypress(function(e){
                 }
             }
         }
-        
     }
 });
 
