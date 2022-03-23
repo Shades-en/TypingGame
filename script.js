@@ -4,7 +4,7 @@ for(i=0;i<sentences.length;i++){
     totalWords+=sentences[i].split(" ").length
 }
 
-
+alert("hello")
 $("div#keyboard-upper-container").hide();
 
 $('#buscar-producto').on('keydown', function(e){
@@ -15,10 +15,7 @@ $(document).keydown(function(e){
     if (e.shiftKey){
         $("div#keyboard-upper-container").show();
         $("div#keyboard-lower-container").hide();
-        if (window.matchMedia('(max-width: 768px)').matches){
-            $("div#keyboard-upper-container").hide();
-            $("div#keyboard-lower-container").hide();
-        }
+        
     }
 }
 );
@@ -27,10 +24,6 @@ $(document).keyup(function(e){
     $("div#keyboard-upper-container").hide();
     $("div#keyboard-lower-container").show();
     $("span,div#32").css("background-color","inherit");
-    if (window.matchMedia('(max-width: 768px)').matches){
-        $("div#keyboard-upper-container").hide();
-        $("div#keyboard-lower-container").hide();
-    }
 }
 );
         
@@ -71,14 +64,7 @@ function game(){
     x=0;
     y=0;
     $("div#target-letter").append(sentences[x][y]);
-    $("#prompt-container").append("<input type='text' id='buscar-producto' placeholder='#buscar-producto'>")
 }
-
-
-    
-  
-
-
 
 function newSentence(x,start){
     $("div#sentence").empty();
