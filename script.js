@@ -51,6 +51,7 @@ $(".plays button").click(()=>{
 });
 
 function game(){
+    totalWords=0;
     for(i=0;i<sentences.length;i++){
         totalWords+=sentences[i].split(" ").length
     }
@@ -154,10 +155,11 @@ $(".logo").click(()=>{
     location.reload()
 })
 
-$("#current").click(()=>$("textarea").val(sentences.join("\n")))
+$("#current").click(()=>$("textarea").val(sentences.join(", ")))
 $("#confirm").click(()=>{
     sentences=$("textarea").val().split(", ")
     $("textarea").val("")
+    start=null;
 })
 
 

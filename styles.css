@@ -20,7 +20,7 @@
 }
 
 #feedback {
-  overflow-wrap:  break-word;
+  overflow-wrap: anywhere;
   width: 100%;
   font-size: 20px;
 }
