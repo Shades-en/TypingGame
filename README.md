@@ -1,7 +1,7 @@
 # TypingGame
 A Typing game to test your typing speed.
 
-You can find it @ shades-en.github.io/typinggame/
+You can find it @<a href="shades-en.github.io/typinggame/" target="blank">shades-en.github.io/typinggame/
 
 ## GUIDE
 
